@@ -292,6 +292,14 @@ body{
     color: white;
 }
 
+.license p{
+    color: rgb(145, 142, 142);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
 
 
 

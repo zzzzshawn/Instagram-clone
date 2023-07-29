@@ -1,0 +1,414 @@
+@font-face{
+    font-family: 'Instagram';
+    src: url(font/Instagram\ Sans\ Bold.woff) format('woff');
+
+
+}
+@font-face {
+    font-family: 'Ig2';
+    src: url(font/Demo_Fonts/Fontspring-DEMO-blue_vinyl_bold_ps_ot.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Instagram';
+    user-select: none;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: calc(1.5rem / 2); 
+}
+
+::-webkit-scrollbar-track {
+    background:rgb(24, 23, 23);
+  }
+   
+::-webkit-scrollbar-thumb {
+    background-color: rgb(63, 61, 61);
+    border-radius: 5px;
+  }
+
+body{
+    height: 100vh;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+
+
+
+.sidebar{
+    min-width: 15%;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 7em;
+}
+
+.logo img{
+    width: 4em;
+    margin-right: 10px;
+    margin-left: 1rem;
+    padding: 10px;
+    cursor: pointer;
+}
+.logo h3{
+    font-family: 'Ig2';
+    font-size: 2.5rem;
+}
+
+
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.3rem;
+    min-height: 70vh;
+}
+
+.icons .feed,.explore,.srch,.message,.reel,.noti,.prfl{
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    margin-left:40px ;
+}
+
+.icons img{
+    cursor: pointer;
+    width: 2rem;
+    border-radius: 50%;
+
+}
+
+.icons h4{
+    padding: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-left: 0.2rem;
+    font-weight: bolder;
+}
+
+.content{
+    min-width: 73%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 24%;
+}
+
+
+.images{
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    margin-right: 50px;
+
+}
+
+.images div img{
+    margin: 0 10px;
+    height: 40px;
+    
+}
+
+.images .dp{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid rgb(241, 40, 101);
+}
+.images div{
+    margin-left: 100px;
+}
+
+
+
+.main{
+    width: 100%;
+    display: flex;
+
+}
+
+.fyp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 75%;
+    border-right: 0.08rem solid rgb(41, 41, 41);
+    border-left: 0.08rem solid rgb(41, 41, 41);
+}
+
+.stories{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.stories div{
+    height: 5rem;
+    width: 5rem;
+    border: 3px solid rgb(241, 40, 101);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.stories img{
+    height: 6.2rem;
+    width: 6.2rem;
+    border-radius: 50%;
+    padding: 0.9rem;
+}
+
+.page{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem ;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45rem;
+    border-top: 0.08rem solid rgb(41, 41, 41);
+    margin-bottom: 2rem;
+}
+
+.pic{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic img{
+    width: 40rem;
+    height: 70remx;
+}
+
+.user{
+    margin: 0.5rem;
+}
+
+.user .img{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 3em;
+    width: 40rem;
+}
+
+.k1{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+
+.right{
+    min-width:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: 0%;
+    left: 79%;
+}
+
+.wrapper{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.pfp{
+    height: 15rem;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pfp2{
+    height: 9rem;
+    border-radius: 50%;
+    width: 9rem;
+    margin-top: 40px;
+    border: 5px solid rgb(241, 40, 101);
+    cursor: pointer;
+}
+
+.pfp2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pfp2 img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.handel{
+    text-align: center;
+    height: 10rem;
+    width: 100%;
+    border-bottom: 0.1rem solid rgb(41, 41, 41);
+}
+
+.handel h3{
+    font-size: 4em;
+    cursor: pointer;
+}
+
+.handel h5{
+    font-size: 1.5em;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width:1320px){
+    .right{
+        display: none;
+    }
+
+    .content{
+        min-width: 50%;
+        position: absolute;
+        left: 30%;
+    }
+    .fyp{
+        border:none ;
+    }
+
+    ::-webkit-scrollbar {
+        width: calc(6px / 2); 
+    }
+
+    ::-webkit-scrollbar-track {
+        background:rgb(24, 23, 23);
+      }
+       
+      ::-webkit-scrollbar-thumb {
+        background-color: rgb(63, 61, 61);
+        border-radius: 5px;
+      }
+
+    .sidebar{
+        min-width: 25%;
+        max-height: 100vh;
+        position: fixed;
+        overflow: auto;
+        z-index: 1;
+        border-right: 0.02rem solid rgb(63, 61, 61);
+    }
+}
+
+@media screen and (max-width:1057px){
+
+
+    .sidebar{
+        min-width: 8%;
+        max-height: 100vh;
+        position: fixed;
+        z-index: 1;
+        overflow: auto;
+        border-right: 0.08rem solid rgb(41, 41, 41) ;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 7em;
+    }
+    
+    .logo img{
+        width: 3.8em;
+        margin-right: 10px;
+        margin-left: 1rem;
+        margin-top: 1.3rem;
+        cursor: pointer;
+    }
+    .logo h3{
+        display: none;
+    }
+    
+    
+    
+    .icons{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .icons .feed,.explore,.srch,.message,.reel,.noti,.prfl{
+        display: flex;
+        align-items: center;
+        margin-left: 1.7rem;
+    }
+    
+    .icons img{
+        cursor: pointer;
+        width: 1.7rem;
+        border-radius: 50%;
+    
+    }
+    
+    .icons h4{
+        display: none;
+    }
+
+    .content{
+        left: 15%;
+        
+    }
+
+    .fyp{
+        border: none;
+    }
+}
+
+
+@media screen and (max-width:870px){
+    .sidebar{
+        display: none;
+    }
+
+    .fyp{
+        width: 50%;
+        position: absolute;
+        left: 32%;
+    }
+
+}
+
+

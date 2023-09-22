@@ -1,2 +1,2 @@
 # Instagram clone using HTML, CSS.
-Link: [Instagram-Clone](zzzzshawn.github.io/Instagram-clone/) for deployed project.
+Click ->[Instagram-Clone](zzzzshawn.github.io/Instagram-clone/Index) for deployed project
